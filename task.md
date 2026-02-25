@@ -11,3 +11,18 @@
 
 *italic*
 ![alt text](image.png)
+
+from googletrans import Translator
+
+# Create translator object
+translator = Translator()
+
+# English text
+text = "Hello, how are you?"
+
+# Translate to Kannada (language code: 'kn')
+translated = translator.translate(text, dest='kn')
+
+# Print result
+print("Original:", text)
+print("Kannada:", translated.text)
